@@ -1,0 +1,110 @@
+body {
+	background-image: url(https://res.cloudinary.com/mercyinyang/image/upload/v1568657584/HNG%20task/Gryffindor1_pplnbc.png);
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.home {
+	margin-left: 50px
+}
+
+.about {
+	float:right;
+}
+
+.contact {
+	float:right;
+}
+
+.gallery {
+	float:right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.container {
+	margin-left: 60px; 
+	margin-top: 150px;
+	position: absolute;
+}
+
+.container span {
+	display: block;
+}
+
+.hello {
+	font-size: 40px;
+	font-weight: 700px;
+	margin-bottom: 10px;
+	color: white;
+
+}
+
+.welcome {
+	font-size: 50px;
+	font-weight: 700px;
+	color: white;
+	animation: text 3s 1;
+}
+
+.motto {
+	font-color: black;
+	font-size: 20px;
+}
+
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+}
+
+.button {
+	background-color: rgb(155);
+	border-radius: 10px;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700px;
+	margin-right: 15px;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.copyright {
+	margin-top: 180px; 
+	color: white;
+}
