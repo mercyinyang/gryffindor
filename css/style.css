@@ -1,11 +1,13 @@
 body {
-	background-image: url(https://res.cloudinary.com/mercyinyang/image/upload/v1568657584/HNG%20task/Gryffindor1_pplnbc.png);
+	background-image: url(../image/macbook_pro.png);
 	background-attachment: fixed;
-	font-family: sans-serif;
+    background-size: cover;
+	font-family: Arial Rounded MT;
 }
 
 .home {
-	margin-left: 50px
+	margin-left: 50px;
+    display: flex;
 }
 
 .about {
@@ -18,10 +20,10 @@ body {
 
 .gallery {
 	float:right;
+    margin-right: 5%;
 }
-
-.icon{
-	padding-top: 5px;
+.gallery:hover {
+	cursor: pointer;
 }
 
 ul {
@@ -38,17 +40,18 @@ li {
 li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+/*  text-align: center;*/
+/*  padding: 5%;*/
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+li a:hover:not(.home) {
+/*  border: 2px solid #fff;*/
+    
 }
 
 .active {
-  background-color: #4CAF50;
+/*  background-color: #4CAF50;*/
 }
 
 .container {
@@ -66,7 +69,6 @@ li a:hover:not(.active) {
 	font-weight: 700px;
 	margin-bottom: 10px;
 	color: white;
-	animation: text 3s 1;
 
 }
 
@@ -78,14 +80,15 @@ li a:hover:not(.active) {
 }
 
 .motto {
-	font-color: black;
-	font-size: 20px;
+	color: #fff;
+	font-size: 25px;
+    margin-top: 1%;
 }
 
 @keyframes text{
 	0%{
 		color: black;
-		margin-left: -60px;
+		margin-bottom: -40px;
 	}
 }
 
@@ -110,9 +113,33 @@ li a:hover:not(.active) {
 }
 
 .copyright {
-	margin-left: 60px;
-	margin-top: 530px;
-	font-weight: normal;
-	font-size: 15px;
+	margin-top: 29%; 
 	color: white;
+}
+
+
+@media (max-width: 640px) {
+    .hello {
+        font-size: 30px;
+        font-weight: 700px;
+        margin-bottom: 10px;
+        color: white;
+
+    }
+
+    .welcome {
+        font-size: 34px;
+        font-weight: 700px;
+        color: white;
+        animation: text 3s 1;
+    }
+
+    .motto {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 1%;
+    }
+  .copyright {
+        margin-top: 35%; 
+    }  
 }
