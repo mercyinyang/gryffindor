@@ -36,7 +36,7 @@
                        <a href="#"><img class="social_icon" src="image/facebook.png" alt=""></a>
                        <a href="#"><img class="social_icon" src="image/twitter.png" alt=""></a>
                        </p>  <h5 class="move_top"><p>or</p></h5></div>
-                    <form id="login-form" method="POST">
+                    <form action="engine/auth.php" method="POST">
                         <div id="error"></div>
                         <br><br>
                         <div class="input-group">
