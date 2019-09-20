@@ -1,0 +1,145 @@
+body {
+	background-image: url(../image/macbook_pro.png);
+	background-attachment: fixed;
+    background-size: cover;
+	font-family: Arial Rounded MT;
+}
+
+.home {
+	margin-left: 50px;
+    display: flex;
+}
+
+.about {
+	float:right;
+}
+
+.contact {
+	float:right;
+}
+
+.gallery {
+	float:right;
+    margin-right: 5%;
+}
+.gallery:hover {
+	cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+/*  text-align: center;*/
+/*  padding: 5%;*/
+  text-decoration: none;
+}
+
+li a:hover:not(.home) {
+/*  border: 2px solid #fff;*/
+    
+}
+
+.active {
+/*  background-color: #4CAF50;*/
+}
+
+.container {
+	margin-left: 60px; 
+	margin-top: 150px;
+	position: absolute;
+}
+
+.container span {
+	display: block;
+}
+
+.hello {
+	font-size: 40px;
+	font-weight: 700px;
+	margin-bottom: 10px;
+	color: white;
+
+}
+
+.welcome {
+	font-size: 50px;
+	font-weight: 700px;
+	color: white;
+	animation: text 3s 1;
+}
+
+.motto {
+	color: #fff;
+	font-size: 25px;
+    margin-top: 1%;
+}
+
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+}
+
+.button {
+	background-color: rgb(155);
+	border-radius: 10px;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700px;
+	margin-right: 15px;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.copyright {
+	margin-top: 29%; 
+	color: white;
+}
+
+
+@media (max-width: 640px) {
+    .hello {
+        font-size: 30px;
+        font-weight: 700px;
+        margin-bottom: 10px;
+        color: white;
+
+    }
+
+    .welcome {
+        font-size: 34px;
+        font-weight: 700px;
+        color: white;
+        animation: text 3s 1;
+    }
+
+    .motto {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 1%;
+    }
+  .copyright {
+        margin-top: 35%; 
+    }  
+}
