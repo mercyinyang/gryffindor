@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once 'database.php';
 include_once 'functions.php';
 
@@ -29,7 +30,7 @@ if (isset($_POST['name'])) {
 	}
 	if (!preg_match($string_pattern, $name)) {
 			
-			$error['email'] = "only texts and white space";
+			$error['name'] = "only texts and white space";
 	}
 	if (!preg_match($email_pattern, $email)) {
 			
@@ -114,3 +115,4 @@ if (isset($_POST['login_email'])) {
 
 }
 ?>
+
