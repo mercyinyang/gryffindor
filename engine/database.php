@@ -1,8 +1,8 @@
 <?php 
 define('server', 'localhost');
-define('username', 'h760c4fqmslytymg');
-define('password', 't8aa7eifrrc4xsin');
-define('database', 'y4cbjgvoxyr75u5h');
+define('username', 'id10950407_root');
+define('password', 'webhost');
+define('database', 'id10950407_db');
 
 $mycon= mysqli_connect(server, username, password, database);
 
